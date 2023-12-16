@@ -7,3 +7,7 @@ git reset --hard 1094a
     情况1：文件只在工作区操作，未add。撤销操作：git restore <file>。结果：工作区文件回退。
     情况2：文件已add，未commit。撤销操作：git restore --staged <file>。结果：暂存区文件回退，工作区文件未回退，如需继续回退，操按情况1操作。
     情况3：文件已add，已commit。撤销操作：git reset --hard commit_id。结果：工作区文件、暂存区文件、本地仓库都回退
+ssh-keygen -t rsa -C "youremail@example.com"
+ git remote add origin git@github.com:michaelliao/learngit.git
+ git push -u origin master
+ git push origin master
