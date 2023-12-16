@@ -11,3 +11,9 @@ ssh-keygen -t rsa -C "youremail@example.com"
  git remote add origin git@github.com:michaelliao/learngit.git
  git push -u origin master
  git push origin master
+ https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
+ git remote -v
+ git remote rm origin
+ git checkout -b dev
+ git branch dev
+ git checkout dev
