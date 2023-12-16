@@ -33,3 +33,6 @@ git stash apply
 git stash drop
 git stash pop
 git cherry-pick <commit>
+git branch -D <name>
+git remote
+git remote -v
