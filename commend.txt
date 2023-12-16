@@ -3,17 +3,25 @@ git status
 git log
 git diff [file]
 git reset --hard 1094a
-
     情况1：文件只在工作区操作，未add。撤销操作：git restore <file>。结果：工作区文件回退。
     情况2：文件已add，未commit。撤销操作：git restore --staged <file>。结果：暂存区文件回退，工作区文件未回退，如需继续回退，操按情况1操作。
     情况3：文件已add，已commit。撤销操作：git reset --hard commit_id。结果：工作区文件、暂存区文件、本地仓库都回退
 ssh-keygen -t rsa -C "youremail@example.com"
- git remote add origin git@github.com:michaelliao/learngit.git
- git push -u origin master
- git push origin master
- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
- git remote -v
- git remote rm origin
- git checkout -b dev
- git branch dev
- git checkout dev
+git remote add origin git@github.com:michaelliao/learngit.git
+git push -u origin master
+git push origin master
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
+git remote -v
+git remote rm origin
+git checkout -b dev
+git branch dev
+git checkout dev
+git merge dev
+git branch -d dev
+Git鼓励大量使用分支：
+    查看分支：git branch
+    创建分支：git branch <name>
+    切换分支：git checkout <name>或者git switch <name>
+    创建+切换分支：git checkout -b <name>或者git switch -c <name>
+    合并某分支到当前分支：git merge <name>
+    删除分支：git branch -d <name>
