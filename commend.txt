@@ -26,3 +26,10 @@ Git鼓励大量使用分支：
     合并某分支到当前分支：git merge <name>
     删除分支：git branch -d <name>
 git merge --no-ff -m "merge with no-ff" dev
+git log --graph --pretty=oneline --abbrev-commit
+git stash
+git stash list
+git stash apply
+git stash drop
+git stash pop
+git cherry-pick <commit>
