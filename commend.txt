@@ -27,7 +27,7 @@ Git鼓励大量使用分支：
     删除分支：git branch -d <name>
 git merge --no-ff -m "merge with no-ff" dev
 git log --graph --pretty=oneline --abbrev-commit
-git stash
+git stash 
 git stash list
 git stash apply
 git stash drop
@@ -36,3 +36,21 @@ git cherry-pick <commit>
 git branch -D <name>
 git remote
 git remote -v
+git log --pretty=oneline --abbrev-commit
+git tag v1.0
+git tag v0.9 f52c633
+git tag
+git tag -a v0.1 -m "version 0.1 released" 1094adb
+git tag -d v0.1
+git push origin <tagname>
+git push origin --tags
+git tag -d v0.9
+git push origin :refs/tags/v0.9
+https://gitignore.itranswarp.com/
+git add -f App.class
+git check-ignore -v App.class
+!.gitignore
+git config --global alias.st status
+git log -1
+SourceTree
+https://liaoxuefeng.gitee.io/resource.liaoxuefeng.com/git/git-cheat-sheet.pdf
