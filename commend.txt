@@ -1,3 +1,5 @@
+
+git pull origin master
 git add [file]
 git status
 git log
